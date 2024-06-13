@@ -1,2 +1,6 @@
 # UTI
-Vision Language models for image captioning tasks
+
+UTI stands for **U**r **T**houghts on **I**mages. 
+
+
+## Usage
