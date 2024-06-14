@@ -1,34 +1,40 @@
+import os
+from dotenv import load_dotenv
+
 import streamlit as st
-import easyocr
+import google.generativeai as genai
 import numpy as np
 from PIL import Image
 import requests
 import json
 from transformers import pipeline
 from groq import Groq
+from src.prompt import object_detection
 
-# Initialize the OCR reader
-ocr_reader = easyocr.Reader(["en"])
+load_dotenv()
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel('gemini-1.5-flash')
+
 
 def get_image_caption(image):
-    # Use a pre-trained image captioning model from Salesforce
-    caption_pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-base")
-    return caption_pipeline(image)[0]['generated_text']
+    # caption_pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-base")
+    # return caption_pipeline(image)[0]['generated_text']
+    # image = Image.open(image)
+    prompt = object_detection
+    response = model.generate_content(contents=[prompt, image]).text
+    return response
 
-def perform_ocr(image):
-    result = ocr_reader.readtext(np.array(image))
-    ocr_texts = [line[1] for line in result]
-    return ocr_texts
 
-def analyze_image_information(image_description, ocr_results):
+def analyze_image_information(image_description):
     prompt = f"""
     Analyze the following image information and provide insights based on the criteria given below:
 
     Image Description:
     {image_description}
-
-    OCR Results:
-    {ocr_results}
 
     Criteria:
     1. Brand Logos: Identify any brand logos mentioned in the description or OCR results.
@@ -44,7 +50,7 @@ def analyze_image_information(image_description, ocr_results):
 
     client = Groq(
         # This is the default and can be omitted
-        api_key="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",
+        api_key=GROQ_API_KEY,
     )
 
 
@@ -81,9 +87,6 @@ with col2:
         image_description = get_image_caption(image)
         st.write(image_description)
 
-        # # Perform OCR
-        # st.subheader("OCR Texts")
-        ocr_texts = perform_ocr(image)
         # for text in ocr_texts:
         #     st.write(text)
 
@@ -92,6 +95,6 @@ with col3:
 
     if uploaded_file is not None:
         # Analyze image information
-        ocr_results = ' '.join(ocr_texts)
-        analysis = analyze_image_information(image_description, ocr_results)
+        # ocr_results = ' '.join(ocr_texts)
+        analysis = analyze_image_information(image_description)
         st.write(analysis)

@@ -1,5 +1,5 @@
 import easyocr
-
+import numpy as np
 
 # Initialize the OCR reader
 ocr_reader = easyocr.Reader(["en"])
