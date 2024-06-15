@@ -42,17 +42,10 @@ streamlit run app.py
 ## Contact Us:
 For any questions, feedback, or bug reports, please contact:
 
-| Team Member | Email | LinkedIn Profile |
-|---|---|---|
-| Lê Đức Minh | deutschlernen2303@gmail.com | https://www.linkedin.com/in/minh-le-duc-a62863172/ |
-| Lê Nguyễn Đăng Khoa | khoale.maiu@gmail.com | https://www.linkedin.com/in/khoale-maiu/ |
-| Trần Ngọc Đại | ngocdai101004@gmail.com | https://www.linkedin.com/in/ngoc-dai-tran-621b62292/ |
-| Minh Mẫn | phamminhman1312005@gmail.com | https://www.linkedin.com/in/m%E1%BA%ABn-ph%E1%BA%A1m-47b493311/| 
-
-+ *Lê Đức Minh* | [LinkedIn: /in/minh-le-duc/](https://www.linkedin.com/in/minh-le-duc-a62863172/ ) | Gmail: minh.leduc.0210@gmail.com
-+ *Lê Nguyễn Đăng Khoa* | [LinkedIn: /in/khoale-maiu/](https://www.linkedin.com/in/khoale-maiu/ ) | Gmail: khoale.maiu@gmail.com
-+ *Trần Ngọc Đại* | [LinkedIn: in/ngoc-dai-tran/](https://www.linkedin.com/in/ngoc-dai-tran-621b62292/) | Gmail: ngocdai101004@gmail.com 
-+ *Phạm Minh Mẫn* | [LinkedIn: /in/man-pham/](https://www.linkedin.com/in/m%E1%BA%ABn-ph%E1%BA%A1m-47b493311/ ) | Gmail: phamminhman1312005@gmail.com
++ *Lê Đức Minh* | **LinkedIn:** [/in/minh-le-duc/](https://www.linkedin.com/in/minh-le-duc-a62863172/ ) | **Gmail:** minh.leduc.0210@gmail.com
++ *Lê Nguyễn Đăng Khoa* | **LinkedIn:** [/in/khoale-maiu/](https://www.linkedin.com/in/khoale-maiu/ ) | **Gmail:** khoale.maiu@gmail.com
++ *Trần Ngọc Đại* | **LinkedIn:** [/in/ngoc-dai-tran/](https://www.linkedin.com/in/ngoc-dai-tran-621b62292/) | **Gmail:** ngocdai101004@gmail.com 
++ *Phạm Minh Mẫn* | **LinkedIn:** [/in/man-pham/](https://www.linkedin.com/in/m%E1%BA%ABn-ph%E1%BA%A1m-47b493311/ ) | **Gmail:** phamminhman1312005@gmail.com
 
 ## Note:
 
