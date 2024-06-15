@@ -1,4 +1,12 @@
-object_detection = """Detect everything you see in the provided picture. Tell me what you can see in the image. In addition, you should focus on these things: 
+"""Set of constants."""
+DEFAULT_CANDIDATE_COUNT = 1
+DEFAULT_TEMPERATURE = 0.8
+DEFAULT_TOP_K = 20
+DEFAULT_TOP_P = 0.8
+DEFAULT_NUM_OUTPUTS = 256  # tokens
+
+
+PREDEFINED_CLASS = """
 # Branding Elements
 heineken_logo
 tiger_logo
@@ -144,5 +152,4 @@ family_group
 business_meeting
 casual_dining
 formal_event
-   You should tell the number of each object that you can define and list them in bullet points.
 """

@@ -30,7 +30,7 @@ class OllamaAgent:
         self.headers = {
             "Content-Type": "application/json"
             }
-    @classmethod
+        
     def chat(self, prompt:str, 
              image_path:str): 
         payload = {

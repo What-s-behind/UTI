@@ -5,38 +5,34 @@ add_page_title()
 
 st.sidebar.write(
     """
-    App created by [Minh Le Duc](https://www.linkedin.com/in/minh-le-duc-a62863172/) using [Streamlit](https://streamlit.io/) and [HuggingFace](https://huggingface.co/inference-api).
+    App created by AIO_Explorer
     """
 )
 
 # ----- Main content -----
-st.subheader("About me")
+st.subheader("About team")
 st.markdown(
 """
-    My name is Minh Le Duc, an AI enthusiast who is walking step by step on the path of becoming an expert in AI career. 
-"""
-)
+##  AIO_Explorer:  Unveiling Marketing Magic with GenAI
 
-st.subheader("About the project")
-st.markdown(
-"""
-Clearly, we can see that thanks to the advancement of the technology, the traffic of information becomes more remarkably astonishing. 
-However, the advantage does raise a disturb phenomenon in which a person who need to do research or whose job relate to searching documents becomes drowned. 
-A tool which is able to extract most important features from documents are actually in need. 
+Meet AIO_Explorer, a team of passionate visionaries who are revolutionizing the world of marketing analysis using the power of Generative AI (GenAI). We believe in harnessing the potential of AI to extract profound insights from visual data, offering a fresh perspective on understanding consumer behavior and trends.
 
-Automatic text summarization comes and save the day. Summarize is an act of convey important information from the original text(s). 
-Automatic text summarization is the task of producing a concise and fluent summary while preserving key information content and overall meaning. 
-The task is usually put into question since the action requires human knowledge and language adaptability. 
-However, there are many researches have been raised and prove that, although the quality is not remarkable, but the capability is implement-able and develop-able. 
+Our team comprises:
 
-I am inspired by the ability and desired to create an application that pursuit the AI-based summarizer. Thereore, I create this application to demonstrate the
-automatic text summarization which is performed by deep learning. The project is actively developed. In other words, it would be updated and expaned continuously.
+* **Minh Le** ([https://www.linkedin.com/in/minh-le-duc-a62863172/](https://www.linkedin.com/in/minh-le-duc-a62863172/)): A strategic thinker with a keen eye for detail, Minh brings his expertise in data analysis and innovative problem-solving to the forefront.
+* **Khoa Le ([https://www.linkedin.com/in/khoale-maiu/](https://www.linkedin.com/in/khoale-maiu/)):** A creative mastermind with a deep understanding of marketing principles, Khoa crafts compelling narratives and drives the vision for our projects.
+* **Ngoc Dai Tran ([https://www.linkedin.com/in/m%E1%BA%ABn-ph%E1%BA%A1m-47b493311/](https://www.linkedin.com/in/m%E1%BA%ABn-ph%E1%BA%A1m-47b493311/))** ([https://www.linkedin.com/in/ngoc-dai-tran-621b62292/](https://www.linkedin.com/in/ngoc-dai-tran-621b62292/)): An expert in visual communication and design, Ngoc Dai ensures that our insights are communicated clearly and effectively.
+* **Man Pham:** A meticulous researcher with a passion for exploring the world of AI, Mân provides the foundation of knowledge and cutting-edge technology that fuels our explorations.
+
+Together, we form a synergistic team dedicated to unlocking the hidden gems of marketing information contained within images. Our mission is to empower businesses with data-driven insights, enabling them to optimize campaigns, personalize experiences, and achieve impactful results. 
+
+We invite you to join us on this exciting journey as we dive into the world of GenAI-powered marketing analysis. Let's explore, innovate, and transform the future of marketing together!
 """
 )
 
 st.subheader("More details")
 st.markdown(
 """
-    More details about project structure and results of experiments are disscussed in [the project's Github repo](https://github.com/MinLee0210/DoCo.git).
+    More details about project structure and results of experiments are disscussed in [the project's Github repo](https://github.com/What-s-behind/UTI.git.
 """
 )
