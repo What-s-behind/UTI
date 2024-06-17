@@ -3,11 +3,10 @@ DEFAULT_CANDIDATE_COUNT = 1
 DEFAULT_TEMPERATURE = 0.8
 DEFAULT_TOP_K = 20
 DEFAULT_TOP_P = 0.8
-DEFAULT_NUM_OUTPUTS = 256  # tokens
+DEFAULT_NUM_OUTPUTS = 50  # tokens
 
 
 PREDEFINED_CLASS = """
-# Branding Elements
 heineken_logo
 tiger_logo
 biaviet_logo
@@ -18,7 +17,16 @@ bialacviet_logo
 strongbow_logo
 biasaigon_logo
 
-# Promotional Materials
+heineken_boxes
+tiger_boxes
+biaviet_boxes
+larue_boxes
+bivina_boxes
+edelweiss_boxes
+bialacviet_boxes
+strongbow_boxes
+biasaigon_boxes
+
 heineken_poster
 heineken_banner
 heineken_billboard
@@ -74,7 +82,6 @@ biasaigon_table_tent
 biasaigon_digital_screen
 biasaigon_standee
 
-# Product Types
 heineken_beer_keg
 heineken_beer_bottle
 heineken_beer_can
@@ -112,7 +119,6 @@ biasaigon_beer_bottle
 biasaigon_beer_can
 biasaigon_special_edition_package
 
-# Human Presence and Roles
 consumer
 promoter
 staff
@@ -120,36 +126,33 @@ customer_buying
 customer_interacting
 staff_restocking
 
-# Venue Types
-bar
-restaurant
-grocery_store
-supermarket
-convenience_store
-night_club
-outdoor_venue
-indoor_venue
+# bar
+# restaurant
+# grocery_store
+# supermarket
+# convenience_store
+# night_club
+# outdoor_venue
+# indoor_venue
 
-# Context and Environment
-qr_code
-price_tag
-inventory_shelf
-vehicle_advertisement
-ceiling_hanging
-branding_placement_compliance
-regulatory_compliance_sign
-health_and_safety_signage
-interior_view
-exterior_view
-counter_area
-seating_area
-entrance
+# qr_code
+# price_tag
+# inventory_shelf
+# vehicle_advertisement
+# ceiling_hanging
+# branding_placement_compliance
+# regulatory_compliance_sign
+# health_and_safety_signage
+# interior_view
+# exterior_view
+# counter_area
+# seating_area
+# entrance
 
-# Consumer Contexts and Interactions
-consumer_group
-consumer_solo
-family_group
-business_meeting
-casual_dining
-formal_event
+# consumer_group
+# consumer_solo
+# family_group
+# business_meeting
+# casual_dining
+# formal_event
 """

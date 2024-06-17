@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GEMINI_API_KEY = os.getenv("X")
+GROQ_API_KEY = os.getenv("X")
 
 import streamlit as st
 
@@ -22,8 +22,8 @@ st.sidebar.write("")
 #     type="password",
 # )
 
-vision_model = GeminiAgent(api_key=GEMINI_API_KEY)
-language_model = GroqAgent(api_key=GROQ_API_KEY)
+vision_model = GeminiAgent(api_key="X")
+language_model = GroqAgent(api_key="X")
 
 st.sidebar.write(
     """
