@@ -22,6 +22,17 @@ st.sidebar.write("")
 #     type="password",
 # )
 
+if GEMINI_API_KEY: 
+    ...
+
+else: 
+    ...
+
+if GROQ_API_KEY: 
+    ... 
+else: 
+    ...
+
 vision_model = GeminiAgent(api_key=GEMINI_API_KEY)
 language_model = GroqAgent(api_key=GROQ_API_KEY)
 
@@ -54,9 +65,8 @@ st.markdown(
 st.header("Upload Image")
 uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
 
-col1, col2 = st.columns([1, 2])
-with col1: 
-    st.header("OCR and Description")
+
+with st.expander("## Image Description"):
     if uploaded_file is not None:
         # Load the image
         image = get_image(uploaded_file)
@@ -67,9 +77,7 @@ with col1:
         image_description = get_image_captioning(vision_model, image)
         st.write(image_description.text)
 
-with col2:
-    st.header("Analysis")
-
+with st.expander("## Smart Analysis"):
     if uploaded_file is not None:
         analysis = analyze_image_information(language_model, image_description)
         st.write(analysis)
